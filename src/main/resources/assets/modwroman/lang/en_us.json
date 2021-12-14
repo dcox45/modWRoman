@@ -1,0 +1,13 @@
+{
+	"item.modwroman.example_item": "Example Item",	
+	
+	"item.modwroman.flame_thrower": "Flame Thrower",
+	
+	"block.modwroman.myslime_block": "Roman's Slime Thingy",
+	
+	"item.modwroman.special_item": "Special Item that I'm Testing",
+	
+	"tooltip.special_item.hold_shift": "Hold Shift for more Information",
+	
+	"block.modwroman.dylans_door": "Dylan's door"
+}
