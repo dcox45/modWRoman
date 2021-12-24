@@ -67,7 +67,6 @@ public class FlameThrower extends Item{
 	      return ActionResult.sidedSuccess(itemstack, world.isClientSide());
 	}
 	
-	
 }
 
 

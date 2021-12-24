@@ -3,6 +3,7 @@ package com.dcox.modwroman.core.init;
 import com.dcox.modwroman.ModwRoman;
 import com.dcox.modwroman.common.items.ExampleItem;
 import com.dcox.modwroman.common.items.FlameThrower;
+import com.dcox.modwroman.common.items.LightningWand;
 import com.dcox.modwroman.common.items.SpecialItem;
 
 import net.minecraft.block.AbstractBlock;
@@ -43,6 +44,9 @@ public class ItemInit {
 	
 	public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item", 
 			() -> new SpecialItem(new Item.Properties().tab(ItemGroup.TAB_MISC)));
+	
+    public static final RegistryObject<LightningWand> lightning_wand = ITEMS.register("lightning_wand", () -> new LightningWand(new Item.Properties().tab(ItemGroup.TAB_MISC)));
+
 			
 
 }

@@ -9,5 +9,9 @@
 	
 	"tooltip.special_item.hold_shift": "Hold Shift for more Information",
 	
-	"block.modwroman.dylans_door": "Dylan's door"
+	"block.modwroman.dylans_door": "Dylan's door",
+	
+    "item.modwroman.lightning_wand": "Lightning Wand"
+	
+	
 }
