@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -32,6 +33,7 @@ import com.dcox.modwroman.common.items.ExampleItem;
 import com.dcox.modwroman.common.items.FlameThrower;
 import com.dcox.modwroman.core.init.BlockInit;
 import com.dcox.modwroman.core.init.ItemInit;
+import com.dcox.modwroman.core.world.OreGeneration;
 
 import java.util.stream.Collectors;
 
@@ -51,6 +53,7 @@ public class ModwRoman
     	bus.addListener(this::doClientStuff);
     	ItemInit.ITEMS.register(bus);
     	BlockInit.BLOCKS.register(bus);
+    	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register ourselves for server and other game events we are interested in

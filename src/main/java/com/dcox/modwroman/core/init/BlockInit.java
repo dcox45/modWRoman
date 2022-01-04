@@ -24,6 +24,8 @@ public class BlockInit {
     public static final RegistryObject<Block> DYLANS_DOOR = BLOCKS.register("dylans_door",
     		() -> new DoorBlock(AbstractBlock.Properties.of(Material.WOOD).harvestLevel(2)
     				.requiresCorrectToolForDrops().harvestTool(ToolType.PICKAXE).strength(6f)));
+    
+    
 
 
 }
